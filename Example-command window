@@ -1,0 +1,5 @@
+%define the equation f and its derivative %
+f = @(x) 3*x+sin(x)-exp(x);
+df = @(x) 3+cos(x)-exp(x);
+%launch the command : %
+[x,it] = fnewton(f,df,0.0,0.0000)
